@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./fonts/restaurant.woff2') format('woff2'),
+      url('./fonts/restaurant.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+html,body {
+    margin: 0;
+    
+}
+
+li {
+    display: inline;
+    padding-right: 30px;
+    font-size: 40px;
+    cursor: pointer;
+
+}
+
+li:hover {
+    color: #bdd6d2;
+ 
+}
+
+
+/* navbar */
+
+.navbar {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: start;
+    padding-top: 20px;
+    padding-left: 80px;
+    color: white;
+    font-family: 'Lato', sans-serif; 
+}
+
+/* home style */
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+    background: url('./images/seco.jpg');
+    background-repeat:no-repeat;
+    background-size:  cover;
+    background-position:center;  
+}
+
+.homeRight {
+    grid-row: 1 / 3;
+    
+}
+
+.homeLeft {
+    grid-row: 2 / 3; 
+    display: flex;
+    flex-direction: column; 
+    padding-left: 80px;
+}
+
+.brandTag {
+    color: white;
+    font-family: 'MyFont';
+    padding-top: 40px;
+    font-size: 2rem;
+     
+}
+
+
+
+/* Card */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+}
+
+
+.contentDiv {
+
+    display: block; 
+    margin-top: 50px;  
+    text-align: center;
+
+    position: relative; /* for iOS */
+   
+    padding: 20px;
+    color: #586875;
+    background-color: #f4f7f7;
+    box-shadow: 0 10px 20px black;
+
+    
+  
+}
+
+.cardTitle {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #bdd6d2;
+    font-size: 1.5rem;
+}
+
+.title { 
+    margin: 0; 
+    font-size: 11rem;
+    padding-top: 5rem;
+    color: white;
+    line-height: 1em;
+    font-family: 'MyFont';
+}
+
+.contentCard {
+    font-size: 1.5rem;
+    padding: 30px; 
+}
+
+.footer {
+    margin: 0 -20px -20px;
+    padding: 15px;
+    background-color: #bdd6d2;
+    font-weight: bold;
+    text-align: center;
+  }
+  
